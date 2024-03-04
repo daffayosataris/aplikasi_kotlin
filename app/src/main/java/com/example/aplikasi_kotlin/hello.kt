@@ -1,25 +1,20 @@
-package com.example.aplikasi_kotlin
-
-data class Biodata(
+data class Person(
     val nama: String,
-    val jenisKelamin: String,
-    val hobi: List<String>,
-    val citaCita: String,
-    val agama: String
+    val hobi: String,
+    val agama: String,
+    val Citacita: String
 )
 
 fun main() {
-    val adiWirawan = Biodata(
-        nama = "Daffa Yosataris TH",
-        jenisKelamin = "Laki-laki",
-        hobi = listOf("Membaca", "Belajar"),
-        citaCita = "Menjadi Presiden Republik Indonesia",
-        agama = "Islam"
+    val person = Person(
+        nama = "Daffa Yosataris",
+        hobi = "Membaca",
+        agama = "Islam",
+        Citacita = "Menjadi Presiden Republik Indonesia"
     )
 
-    println("Nama: ${adiWirawan.nama}")
-    println("Jenis Kelamin: ${adiWirawan.jenisKelamin}")
-    println("Hobi: ${adiWirawan.hobi.joinToString(", ")}")
-    println("Cita-cita: ${adiWirawan.citaCita}")
-    println("Agama: ${adiWirawan.agama}")
+    println("Nama: ${person.nama}")
+    println("Hobi: ${person.hobi}")
+    println("agama: ${person.agama}")
+    println("Citacita: ${person.Citacita}")
 }
